@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    image: my-script
+    container_name: my-script-compose
+    volumes:
+      - monitor-data:/var/www
+
+volumes:
+  monitor-data:
