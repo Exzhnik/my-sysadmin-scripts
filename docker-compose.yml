@@ -3,6 +3,8 @@ services:
     build: .
     image: my-script
     container_name: my-script-compose
+    ports:
+      - "8080:8080"
     volumes:
       - monitor-data:/var/www
 
