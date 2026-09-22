@@ -8,6 +8,7 @@ ExecStart=/usr/bin/docker start -a my-app
 ExecStop=/usr/bin/docker stop -t 10 my-app
 Restart=on-failure
 RestartSec=5
+SuccessExitStatus=0 137 143
 
 [Install]
 WantedBy=multi-user.target
